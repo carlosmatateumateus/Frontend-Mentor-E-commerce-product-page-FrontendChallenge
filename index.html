@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/styles/css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <img src="assets/images/logo.svg" alt="">
+      <ul>
+        <li><a href="">Collections</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <img src="assets/images/icon-cart.svg" alt="" id="cart"> <div id="number_of_products"></div>
+      <img src="assets/images/image-avatar.png" alt="" id="avatar">
+    </div>
+  </header>
+  <hr>
+
+  <main>
+    <div id="theme-switcher">
+      <div id="viewer">
+        
+      </div>
+      <div id="options">
+        <img src="assets/images/image-product-1-thumbnail.jpg" alt="" onclick="change_image('1')">
+        <img src="assets/images/image-product-2-thumbnail.jpg" alt="" onclick="change_image('2')">
+        <img src="assets/images/image-product-3-thumbnail.jpg" alt="" onclick="change_image('3')">
+        <img src="assets/images/image-product-4-thumbnail.jpg" alt="" onclick="change_image('4')">
+      </div>
+    </div>
+    <div id="read">
+      <h1>Sneaker Company</h1>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div id="table">
+        <div>
+          <mark id="mark1">$125.00</mark>
+          <mark id="mark2">$250.00</mark>
+        </div>
+          <mark id="mark3">50%</mark>
+        </div>
+      <div id="table-options">
+            <div id="options">
+              <div id="minus" onclick="increment_productos('-')">-</div>
+              <div id="quantity_of_products">0</div>
+              <div id="plus" onclick="increment_productos('+')">+</div>
+            </div>
+            <button>Add to cart</button>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Carlos Matateu Mateus</a>.
+  </div>
+
+  <script src="assets/script/script.js"></script>
+</body>
+</html>
